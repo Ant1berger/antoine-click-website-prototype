@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta
+      name="description"
+      content="Variante éditoriale manifeste pour le futur site d’Antoine."
+    >
+    <title>Antoine — Variante éditoriale manifeste</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500&family=Syne:wght@400;500&display=swap"
+      rel="stylesheet"
+    >
+    <link rel="stylesheet" href="editorial.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Aller au contenu</a>
+
+    <header class="site-header" aria-label="En-tête du site">
+      <a class="brand" href="index.html" aria-label="Antoine.click, accueil">
+        <span class="brand__name">Antoine.click</span>
+      </a>
+
+      <nav class="site-nav" aria-label="Navigation principale">
+        <a href="#image">Image</a>
+        <a href="#edition">Édition</a>
+        <a href="#preuves">Exigence</a>
+      </nav>
+
+      <a class="contact-link" href="#contact">Contact</a>
+    </header>
+
+    <main id="main">
+      <section class="hero" aria-labelledby="hero-title">
+        <h1 id="hero-title">
+          <span>Un site qui vous ressemble.</span>
+          <span>Un outil que vous maîtrisez.</span>
+        </h1>
+        <p class="hero__intro">
+          Je conçois votre outil de communication sur mesure, jusque dans la
+          façon dont vous souhaitez le faire vivre.
+        </p>
+        <div class="hero__actions">
+          <a class="scroll-cue" href="#image" aria-label="Découvrir la suite">
+            <span aria-hidden="true">↓</span>
+          </a>
+        </div>
+      </section>
+
+      <section class="editorial-block" id="image" aria-labelledby="image-title">
+        <div class="editorial-block__copy">
+          <h2 id="image-title">Votre image</h2>
+          <p>
+            Votre intention, votre charte, votre message : je les traduis dans
+            un univers graphique développé spécifiquement pour votre site.
+          </p>
+          <a class="read-link" href="#edition">Continuer <span aria-hidden="true">—</span></a>
+        </div>
+
+        <svg class="visual-svg visual-svg--identity" viewBox="0 0 620 440" role="img" aria-label="Étude graphique abstraite">
+          <rect class="visual-svg__frame" x="1" y="1" width="618" height="438"></rect>
+          <rect class="visual-svg__thin" x="34" y="32" width="552" height="376"></rect>
+          <rect class="visual-svg__paper" x="62" y="58" width="294" height="202"></rect>
+          <rect class="visual-svg__accent" x="92" y="92" width="132" height="9"></rect>
+          <rect class="visual-svg__strong" x="92" y="126" width="220" height="48"></rect>
+          <path class="visual-svg__line" d="M92 203H276"></path>
+          <path class="visual-svg__line" d="M92 225H236"></path>
+          <rect class="visual-svg__swatch visual-svg__swatch--dark" x="382" y="58" width="62" height="202"></rect>
+          <rect class="visual-svg__swatch visual-svg__swatch--accent" x="444" y="58" width="72" height="202"></rect>
+          <rect class="visual-svg__swatch visual-svg__swatch--light" x="516" y="58" width="42" height="202"></rect>
+          <rect class="visual-svg__paper" x="62" y="288" width="496" height="74"></rect>
+          <rect class="visual-svg__strong" x="92" y="314" width="112" height="13"></rect>
+          <path class="visual-svg__line" d="M92 342H318"></path>
+        </svg>
+      </section>
+
+      <section class="editorial-block editorial-block--reverse" id="edition" aria-labelledby="edition-title">
+        <svg class="visual-svg visual-svg--interface" viewBox="0 0 620 440" role="img" aria-label="Interface de modification abstraite">
+          <rect class="visual-svg__frame" x="1" y="1" width="618" height="438"></rect>
+          <rect class="visual-svg__thin" x="34" y="34" width="552" height="372"></rect>
+          <rect class="visual-svg__paper" x="82" y="72" width="456" height="184"></rect>
+          <rect class="visual-svg__accent" x="118" y="108" width="112" height="9"></rect>
+          <rect class="visual-svg__strong" x="118" y="143" width="196" height="36"></rect>
+          <path class="visual-svg__line" d="M118 207H362"></path>
+          <path class="visual-svg__line" d="M118 229H286"></path>
+          <rect class="visual-svg__control" x="82" y="302" width="54" height="54"></rect>
+          <path class="visual-svg__icon" d="M101 320H119M101 335H114"></path>
+          <rect class="visual-svg__control" x="158" y="302" width="54" height="54"></rect>
+          <rect class="visual-svg__icon-shape" x="177" y="321" width="16" height="16"></rect>
+          <circle class="visual-svg__icon-fill" cx="190" cy="325" r="2.8"></circle>
+          <rect class="visual-svg__control" x="234" y="302" width="54" height="54"></rect>
+          <circle class="visual-svg__icon-shape" cx="261" cy="329" r="9"></circle>
+          <rect class="visual-svg__control" x="310" y="302" width="54" height="54"></rect>
+          <rect class="visual-svg__icon-shape" x="329" y="320" width="16" height="16"></rect>
+          <path class="visual-svg__icon" d="M337 320V336M329 328H345"></path>
+        </svg>
+
+        <div class="editorial-block__copy">
+          <h2 id="edition-title">Votre autonomie</h2>
+          <p>
+            Le sur-mesure jusque dans votre espace d'édition. Ensemble, nous définissons ce que vous souhaitez pouvoir modifier, puis je crée les commandes qui vous permettront de le faire simplement.
+          </p>
+          <a class="read-link" href="#preuves">Continuer <span aria-hidden="true">—</span></a>
+        </div>
+      </section>
+
+      <section class="proofs" id="preuves" aria-labelledby="proofs-title">
+        <h2 id="proofs-title">
+          La qualité se voit peu. Elle se ressent vite.
+        </h2>
+
+        <div class="proof-grid" aria-label="Preuves et engagements">
+          <article class="proof proof--wide">
+            <h3>Chargement</h3>
+            <p>
+              Une base légère, développée sans empilement inutile.
+            </p>
+          </article>
+
+          <article class="proof">
+            <h3>SEO</h3>
+            <p>Une structure lisible, sans promesse magique.</p>
+          </article>
+
+          <article class="proof">
+            <h3>Accessibilité</h3>
+            <p>Contrastes, navigation et hiérarchie traités dès le départ.</p>
+          </article>
+
+          <article class="proof proof--small">
+            <h3>Responsive</h3>
+            <p>Une composition qui garde sa tenue.</p>
+          </article>
+
+          <article class="proof proof--long">
+            <h3>Propriété</h3>
+            <p>
+              Des composants développés pour votre projet, maintenables et
+              transmissibles.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="closing" id="contact" aria-labelledby="contact-title">
+        <h2 id="contact-title">Certains projets appellent une base plus précise.</h2>
+        <p>
+          Si votre site doit porter une image exigeante et rester simple à
+          administrer, il mérite un cadre de conception sérieux.
+        </p>
+        <a class="button" href="mailto:contact@antoine.click">Présenter votre projet</a>
+      </section>
+    </main>
+  </body>
+</html>
