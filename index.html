@@ -5,227 +5,178 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta
       name="description"
-      content="Prototype de direction artistique pour le futur site d’Antoine."
+      content="Prototype du futur site d’Antoine, fondé sur la direction éditoriale manifeste validée."
     >
-    <title>Antoine — Développement de sites vitrines sur mesure</title>
+    <title>Antoine — Sites vitrines sur mesure</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-      href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:wght@400;700&family=Manrope:wght@400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500&family=Syne:wght@400;500&display=swap"
       rel="stylesheet"
     >
-    <link rel="stylesheet" href="styles.css">
-    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="editorial.css">
   </head>
   <body>
     <a class="skip-link" href="#main">Aller au contenu</a>
 
-    <header class="site-header" data-header>
-      <a class="identity" href="#" aria-label="Antoine, accueil">
-        <span class="portrait-frame">
-          <img
-            src="https://antoine.click/wp-content/uploads/portrait-antoine-carre-150x150.webp"
-            alt=""
-            width="150"
-            height="150"
-          >
-        </span>
-        <span class="identity-copy">
-          <strong>Antoine.click</strong>
-          <span>Développeur de sites vitrines</span>
-        </span>
+    <header class="site-header" aria-label="En-tête du site">
+      <a class="brand" href="index.html" aria-label="Antoine.click, accueil">
+        <span class="brand__name">Antoine.click</span>
       </a>
 
-      <nav class="desktop-nav" aria-label="Navigation principale">
-        <ul>
-          <li><a href="#approche">Approche</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#tarifs">Tarifs</a></li>
-        </ul>
+      <nav class="site-nav" aria-label="Navigation principale">
+        <a href="#image">Image</a>
+        <a href="#edition">Édition</a>
+        <a href="#preuves">Exigence</a>
       </nav>
 
-      <a class="header-action button button--small" href="#projet">
-        Parler de votre projet
-        <span aria-hidden="true">↗</span>
-      </a>
-
-      <button
-        class="menu-toggle"
-        type="button"
-        aria-expanded="false"
-        aria-controls="mobile-menu"
-      >
-        <span class="menu-toggle__label">Menu</span>
-        <span class="menu-toggle__icon" aria-hidden="true">
-          <span></span>
-          <span></span>
-        </span>
-      </button>
-
-      <nav class="mobile-nav" id="mobile-menu" aria-label="Navigation mobile" hidden>
-        <a href="#approche">Approche</a>
-        <a href="#portfolio">Portfolio</a>
-        <a href="#tarifs">Tarifs</a>
-        <a href="#projet">Parler de votre projet</a>
-      </nav>
+      <a class="contact-link" href="#contact">Contact</a>
     </header>
 
     <main id="main">
-      <section class="hero" aria-labelledby="hero-title">
-        <div class="hero-copy">
-          <p class="eyebrow">
-            <span aria-hidden="true"></span>
-            Créateur de sites vitrines
-          </p>
+      <section class="stage" aria-labelledby="hero-title">
+        <div class="stage-content hero">
           <h1 id="hero-title">
-            Sites vitrines<br>
-            personnalisés<br>
-            jusque dans votre <em>autonomie.</em>
+            <span>Un site qui vous ressemble.</span>
+            <span>Un outil que vous maîtrisez.</span>
           </h1>
-          <p class="hero-intro">
-            Je développe votre site et ses composants d’édition autour de ce
-            que vous voulez vraiment pouvoir modifier.
+          <p class="hero__intro">
+            Je conçois votre outil de communication sur mesure, jusque dans la
+            façon dont vous souhaitez le faire vivre.
           </p>
-          <div class="hero-actions">
-            <a class="button" href="#projet">
-              Parler de votre projet
-              <span aria-hidden="true">↗</span>
-            </a>
-            <a class="text-link" href="#approche">
-              Découvrir mon approche
+          <div class="hero__actions">
+            <a class="scroll-cue" href="#image" aria-label="Découvrir la suite">
               <span aria-hidden="true">↓</span>
             </a>
           </div>
-          <ul class="proof-list" aria-label="Points forts">
-            <li>Développement WordPress sur mesure</li>
-            <li>Réglages choisis pendant le brief</li>
-            <li>Performance &amp; accessibilité</li>
-          </ul>
         </div>
+      </section>
 
-        <div class="workbench" aria-labelledby="demo-title">
-          <div class="workbench__topbar">
-            <p id="demo-title">
-              <span class="status-dot" aria-hidden="true"></span>
-              Composant texte
-            </p>
-            <span class="workbench__tag">aperçu</span>
-          </div>
-
-          <div class="component-preview" data-tone="cream" data-align="left">
-            <p class="component-preview__label">Votre contenu</p>
-            <p class="component-preview__text">
-              Un message clair,<br>
-              avec juste les libertés<br>
-              dont vous avez besoin.
-            </p>
-            <a href="#projet" class="component-preview__link">Découvrir →</a>
-          </div>
-
-          <form class="controls" aria-label="Réglages de démonstration">
-            <fieldset>
-              <legend>Alignement</legend>
-              <div class="segmented-control">
-                <label>
-                  <input type="radio" name="align" value="left" checked>
-                  <span>Gauche</span>
-                </label>
-                <label>
-                  <input type="radio" name="align" value="center">
-                  <span>Centre</span>
-                </label>
-                <label>
-                  <input type="radio" name="align" value="right">
-                  <span>Droite</span>
-                </label>
-              </div>
-            </fieldset>
-
-            <fieldset>
-              <legend>Couleur autorisée</legend>
-              <div class="swatches">
-                <label>
-                  <input type="radio" name="tone" value="cream" checked>
-                  <span class="swatch swatch--cream">
-                    <span class="visually-hidden">Fond clair</span>
-                  </span>
-                </label>
-                <label>
-                  <input type="radio" name="tone" value="sage">
-                  <span class="swatch swatch--sage">
-                    <span class="visually-hidden">Fond végétal</span>
-                  </span>
-                </label>
-                <label>
-                  <input type="radio" name="tone" value="green">
-                  <span class="swatch swatch--green">
-                    <span class="visually-hidden">Fond vert profond</span>
-                  </span>
-                </label>
-              </div>
-            </fieldset>
-          </form>
-
-          <p class="workbench__note">
-            <span aria-hidden="true">↳</span>
-            L’idée : vous donner les bons réglages, pas tous les réglages.
+      <section class="stage" id="image" aria-labelledby="image-title">
+        <div class="stage-content editorial-block">
+        <div class="editorial-block__copy">
+          <h2 id="image-title">Votre image</h2>
+          <p>
+            Votre intention, votre charte, votre message : je les traduis dans
+            un univers graphique développé spécifiquement pour votre site.
           </p>
+          <a class="read-link" href="#edition">Continuer <span aria-hidden="true">—</span></a>
+        </div>
+
+        <svg class="visual-svg visual-svg--identity" viewBox="0 0 620 440" role="img" aria-label="Étude graphique abstraite">
+          <rect class="visual-svg__frame" x="1" y="1" width="618" height="438"></rect>
+          <rect class="visual-svg__thin" x="34" y="32" width="552" height="376"></rect>
+          <rect class="visual-svg__paper" x="62" y="58" width="294" height="202"></rect>
+          <rect class="visual-svg__accent" x="92" y="92" width="132" height="9"></rect>
+          <rect class="visual-svg__strong" x="92" y="126" width="220" height="48"></rect>
+          <path class="visual-svg__line" d="M92 203H276"></path>
+          <path class="visual-svg__line" d="M92 225H236"></path>
+          <rect class="visual-svg__swatch visual-svg__swatch--dark" x="382" y="58" width="62" height="202"></rect>
+          <rect class="visual-svg__swatch visual-svg__swatch--accent" x="444" y="58" width="72" height="202"></rect>
+          <rect class="visual-svg__swatch visual-svg__swatch--light" x="516" y="58" width="42" height="202"></rect>
+          <rect class="visual-svg__paper" x="62" y="288" width="496" height="74"></rect>
+          <rect class="visual-svg__strong" x="92" y="314" width="112" height="13"></rect>
+          <path class="visual-svg__line" d="M92 342H318"></path>
+          </svg>
         </div>
       </section>
 
-      <section class="approach" id="approche" aria-labelledby="approach-title">
-        <div class="section-heading">
-          <p class="eyebrow">
-            <span aria-hidden="true"></span>
-            Une autonomie sur mesure
+      <section class="stage" id="edition" aria-labelledby="edition-title">
+        <div class="stage-content editorial-block editorial-block--reverse">
+          <svg class="visual-svg visual-svg--interface" viewBox="0 0 620 440" role="img" aria-label="Interface de modification abstraite">
+          <rect class="visual-svg__frame" x="1" y="1" width="618" height="438"></rect>
+          <rect class="visual-svg__thin" x="34" y="34" width="552" height="372"></rect>
+          <rect class="visual-svg__paper" x="68" y="72" width="286" height="184"></rect>
+          <rect class="visual-svg__accent" x="98" y="106" width="78" height="8"></rect>
+          <rect class="visual-svg__strong" x="98" y="139" width="178" height="34"></rect>
+          <path class="visual-svg__line" d="M98 202H298"></path>
+          <path class="visual-svg__line" d="M98 224H246"></path>
+
+          <rect class="visual-svg__settings" x="378" y="72" width="160" height="284"></rect>
+          <path class="visual-svg__setting-line" d="M400 98H438M400 160H426M400 222H446M400 296H430M400 324H468"></path>
+          <path class="visual-svg__range-track" d="M400 124H516M400 186H516"></path>
+          <path class="visual-svg__range-value" d="M400 124H462M400 186H486"></path>
+          <rect class="visual-svg__range-thumb" x="458" y="118" width="8" height="12"></rect>
+          <rect class="visual-svg__range-thumb" x="482" y="180" width="8" height="12"></rect>
+          <rect class="visual-svg__toggle" x="400" y="244" width="38" height="18"></rect>
+          <rect class="visual-svg__toggle-thumb" x="424" y="248" width="10" height="10"></rect>
+          <rect class="visual-svg__toggle visual-svg__toggle--off" x="458" y="244" width="38" height="18"></rect>
+          <rect class="visual-svg__toggle-thumb visual-svg__toggle-thumb--off" x="462" y="248" width="10" height="10"></rect>
+          <circle class="visual-svg__color-dot visual-svg__color-dot--deep" cx="480" cy="296" r="7"></circle>
+          <circle class="visual-svg__color-dot visual-svg__color-dot--accent" cx="502" cy="296" r="7"></circle>
+          <circle class="visual-svg__color-dot visual-svg__color-dot--empty" cx="524" cy="296" r="7"></circle>
+          <rect class="visual-svg__control" x="68" y="302" width="54" height="54"></rect>
+          <path class="visual-svg__icon" d="M87 320H105M87 335H100"></path>
+          <rect class="visual-svg__control" x="138" y="302" width="54" height="54"></rect>
+          <rect class="visual-svg__icon-shape" x="157" y="321" width="16" height="16"></rect>
+          <circle class="visual-svg__icon-fill" cx="170" cy="325" r="2.8"></circle>
+          <rect class="visual-svg__control" x="208" y="302" width="54" height="54"></rect>
+          <circle class="visual-svg__icon-shape" cx="235" cy="329" r="9"></circle>
+          <rect class="visual-svg__control" x="278" y="302" width="54" height="54"></rect>
+          <rect class="visual-svg__icon-shape" x="297" y="320" width="16" height="16"></rect>
+          <path class="visual-svg__icon" d="M305 320V336M297 328H313"></path>
+          </svg>
+
+        <div class="editorial-block__copy">
+          <h2 id="edition-title">Votre autonomie</h2>
+          <p>
+            Le sur-mesure jusque dans votre espace d'édition. Ensemble, nous définissons ce que vous souhaitez pouvoir modifier, puis je crée les commandes qui vous permettront de le faire simplement.
           </p>
-          <h2 id="approach-title">
-            Une personnalisation pensée avant de construire.
-          </h2>
-        </div>
-
-        <div class="approach-grid">
-          <article class="principle principle--brief">
-            <span class="principle__number">01</span>
-            <h3>Ce que vous modifiez.</h3>
-            <p>
-              Textes, images, couleurs, alignements : on choisit ensemble les
-              libertés utiles, avant le design et le développement.
-            </p>
-          </article>
-
-          <article class="principle principle--build">
-            <span class="principle__number">02</span>
-            <h3>Ce que je développe.</h3>
-            <p>
-              Des composants adaptés à votre contenu et à votre charte, pas une
-              interface générique remplie d’options inutiles.
-            </p>
-          </article>
-
-          <article class="principle principle--evolve">
-            <span class="principle__number">03</span>
-            <h3>Ce qui peut évoluer.</h3>
-            <p>
-              Le site reste maintenable : on peut ajouter des réglages ou de
-              nouveaux composants quand le besoin apparaît.
-            </p>
-          </article>
+          <a class="read-link" href="#preuves">Continuer <span aria-hidden="true">—</span></a>
+          </div>
         </div>
       </section>
 
-      <section class="prototype-note" aria-label="Note sur le prototype">
-        <p>
-          <strong>Prototype de direction artistique.</strong>
-          Le portrait est chargé depuis le site actuel. Les textes définitifs,
-          le portfolio et les tarifs seront intégrés après validation de cette
-          première tranche.
-        </p>
+      <section class="stage" id="preuves" aria-labelledby="proofs-title">
+        <div class="stage-content proofs">
+        <h2 id="proofs-title">
+          La qualité se voit peu. Elle se ressent vite.
+        </h2>
+
+        <div class="proof-grid" aria-label="Preuves et engagements">
+          <article class="proof proof--wide">
+            <h3>Chargement</h3>
+            <p>
+              Une base légère, développée sans empilement inutile.
+            </p>
+          </article>
+
+          <article class="proof">
+            <h3>SEO</h3>
+            <p>Une structure lisible, sans promesse magique.</p>
+          </article>
+
+          <article class="proof">
+            <h3>Accessibilité</h3>
+            <p>Contrastes, navigation et hiérarchie traités dès le départ.</p>
+          </article>
+
+          <article class="proof proof--small">
+            <h3>Responsive</h3>
+            <p>Une composition qui garde sa tenue.</p>
+          </article>
+
+          <article class="proof proof--long">
+            <h3>Propriété</h3>
+            <p>
+              Des composants développés pour votre projet, maintenables et
+              transmissibles.
+            </p>
+          </article>
+          </div>
+        </div>
       </section>
 
-      <section class="placeholder-section" id="portfolio" aria-label="Portfolio à venir"></section>
-      <section class="placeholder-section" id="tarifs" aria-label="Tarifs à venir"></section>
-      <section class="placeholder-section" id="projet" aria-label="Demande de projet à venir"></section>
+      <section class="stage" id="contact" aria-labelledby="contact-title">
+        <div class="stage-content closing">
+          <h2 id="contact-title">Certains projets appellent une base plus précise.</h2>
+          <p>
+            Si votre site doit porter une image exigeante et rester simple à
+            administrer, il mérite un cadre de conception sérieux.
+          </p>
+          <a class="button" href="mailto:contact@antoine.click">Présenter votre projet</a>
+        </div>
+      </section>
     </main>
   </body>
 </html>
