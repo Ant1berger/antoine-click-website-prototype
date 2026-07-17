@@ -47,6 +47,11 @@ body {
   margin: 0;
 }
 
+a,
+button {
+  -webkit-tap-highlight-color: transparent;
+}
+
 a {
   color: inherit;
 }
