@@ -25,15 +25,35 @@
           <span class="brand__name">Antoine.click</span>
         </a>
 
-        <nav class="site-nav" aria-label="Navigation principale">
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="site-nav"
+        >
+          <span class="nav-toggle__icon" aria-hidden="true">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+          <span class="visually-hidden">Ouvrir le menu</span>
+        </button>
+
+        <a class="contact-link" href="#contact">Contact</a>
+
+        <nav
+          class="site-nav"
+          id="site-nav"
+          aria-label="Navigation principale"
+          aria-hidden="true"
+          inert
+        >
           <a href="portfolio.html">Portfolio</a>
           <span class="site-nav__separator" aria-hidden="true">•</span>
           <a href="methode.html">Méthode</a>
           <span class="site-nav__separator" aria-hidden="true">•</span>
           <a href="tarifs.html">Tarifs</a>
         </nav>
-
-        <a class="contact-link" href="#contact">Contact</a>
       </div>
     </header>
 
@@ -182,5 +202,6 @@
         </div>
       </section>
     </main>
+    <script src="navigation.js"></script>
   </body>
 </html>
